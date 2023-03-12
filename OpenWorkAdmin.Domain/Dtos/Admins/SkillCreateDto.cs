@@ -1,13 +1,9 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using OpenWorkAdmin.Domain.Common;
 
 namespace OpenWork.Services.Dtos.Admins;
-public class SkillCreateDto
+public class SkillCreateDto : Dto
 {
-	[Required(ErrorMessage = "Enter name of skill")]
 	public string Name { get; set; } = string.Empty;
-
 	public string Description { get; set; } = string.Empty;
-
-	[Required(ErrorMessage = "Choose a catergory for this skill")]
 	public int CategoryId { get; set; }
 }
