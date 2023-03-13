@@ -1,8 +1,5 @@
 ﻿using System.Collections.Generic;
-using System.Text.Json.Serialization;
 using System.Threading.Tasks;
-
-using OpenWork.Domain.Entities;
 
 using OpenWorkAdmin.Domain.ViewModels.Comments;
 using OpenWorkAdmin.Service.Common;
