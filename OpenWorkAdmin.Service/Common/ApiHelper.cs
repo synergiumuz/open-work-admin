@@ -41,4 +41,10 @@ public class ApiHelper
 		HttpResponseMessage request = await _client.PutAsJsonAsync(ip + query, obj);
 		return new RequestResult(await request.Content.ReadAsStringAsync(), request.StatusCode);
 	}
+
+	public async Task<RequestResult> PatchAsync(string query)
+	{
+		HttpResponseMessage request = await _client.PatchAsync(ip + query, null);
+		return new RequestResult(await request.Content.ReadAsStringAsync(), request.StatusCode);
+	}
 }
