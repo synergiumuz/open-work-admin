@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-using OpenWorkAdmin.Domain.Entities;
+using OpenWork.Domain.Entities;
 
 namespace OpenWorkAdmin.Domain.ViewModels.Workers;
 

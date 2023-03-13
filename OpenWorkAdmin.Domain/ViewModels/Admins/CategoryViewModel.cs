@@ -1,5 +1,8 @@
-﻿using OpenWorkAdmin.Domain.Common;
-using OpenWorkAdmin.Domain.Entities;
+﻿using System.Collections.Generic;
+
+using OpenWork.Domain.Entities;
+
+using OpenWorkAdmin.Domain.Common;
 
 namespace OpenWorkAdmin.Domain.ViewModels.Admins;
 
