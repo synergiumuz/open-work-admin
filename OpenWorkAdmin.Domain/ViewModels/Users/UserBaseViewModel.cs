@@ -1,6 +1,6 @@
 ﻿using OpenWorkAdmin.Domain.Common;
 
-namespace OpenWork.Services.ViewModels.Users;
+namespace OpenWorkAdmin.Domain.ViewModels.Users;
 
 public class UserBaseViewModel : BaseEntity
 {

@@ -2,7 +2,7 @@
 
 using OpenWorkAdmin.Domain.Common;
 
-namespace OpenWork.Services.ViewModels.Workers;
+namespace OpenWorkAdmin.Domain.ViewModels.Workers;
 
 public class WorkerBaseViewModel : BaseEntity
 {

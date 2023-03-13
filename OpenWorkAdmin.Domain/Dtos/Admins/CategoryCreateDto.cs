@@ -1,6 +1,6 @@
 ﻿using OpenWorkAdmin.Domain.Common;
 
-namespace OpenWork.Services.Dtos.Admins;
+namespace OpenWorkAdmin.Domain.Dtos.Admins;
 
 public class CategoryCreateDto : Dto
 {

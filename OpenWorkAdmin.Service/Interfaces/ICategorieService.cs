@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 
-using OpenWork.Services.Dtos.Admins;
-using OpenWork.Services.ViewModels.Admins;
+using OpenWorkAdmin.Domain.Dtos.Admins;
+using OpenWorkAdmin.Domain.ViewModels.Admins;
 
 namespace OpenWorkAdmin.Service.Interfaces;
 

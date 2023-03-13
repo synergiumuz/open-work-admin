@@ -1,11 +1,10 @@
 ﻿using System;
 
-using OpenWork.Services.ViewModels.Users;
-using OpenWork.Services.ViewModels.Workers;
-
 using OpenWorkAdmin.Domain.Common;
+using OpenWorkAdmin.Domain.ViewModels.Users;
+using OpenWorkAdmin.Domain.ViewModels.Workers;
 
-namespace OpenWork.Services.ViewModels.Comments;
+namespace OpenWorkAdmin.Domain.ViewModels.Comments;
 
 public class CommentViewModel : BaseEntity
 {

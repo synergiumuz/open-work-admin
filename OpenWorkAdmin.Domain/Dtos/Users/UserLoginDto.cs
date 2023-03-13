@@ -1,6 +1,6 @@
 ﻿using OpenWorkAdmin.Domain.Common;
 
-namespace OpenWork.Services.Dtos.Users;
+namespace OpenWorkAdmin.Domain.Dtos.Users;
 
 public class UserLoginDto : Dto
 {

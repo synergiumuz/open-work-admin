@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using OpenWorkAdmin.Domain.Common;
 using OpenWorkAdmin.Service.Utils;
 
-namespace OpenWorkAdmin.Service.Services.Common;
+namespace OpenWorkAdmin.Service.Common;
 
 public class ApiHelper
 {
@@ -14,25 +14,25 @@ public class ApiHelper
 
 	public async Task<RequestResult> DeleteAsync(string query)
 	{
-		var request = await _client.DeleteAsync(ip + query);
+		HttpResponseMessage request = await _client.DeleteAsync(ip + query);
 		return new RequestResult(await request.Content.ReadAsStringAsync(), request.StatusCode);
 	}
 
 	public async Task<RequestResult> GetAsync(string query)
 	{
-		var request = await _client.GetAsync(ip + query);
+		HttpResponseMessage request = await _client.GetAsync(ip + query);
 		return new RequestResult(await request.Content.ReadAsStringAsync(), request.StatusCode);
 	}
 
 	public async Task<RequestResult> PostAsync<T>(string query, T obj) where T : Dto
 	{
-		var request = await _client.PostAsJsonAsync(ip + query, obj);
+		HttpResponseMessage request = await _client.PostAsJsonAsync(ip + query, obj);
 		return new RequestResult(await request.Content.ReadAsStringAsync(), request.StatusCode);
 	}
 
 	public async Task<RequestResult> PutAsync<T>(string query, T obj) where T : Dto
 	{
-		var request = await _client.PutAsJsonAsync(ip + query, obj);
+		HttpResponseMessage request = await _client.PutAsJsonAsync(ip + query, obj);
 		return new RequestResult(await request.Content.ReadAsStringAsync(), request.StatusCode);
 	}
 }

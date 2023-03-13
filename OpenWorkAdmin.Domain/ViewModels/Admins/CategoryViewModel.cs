@@ -1,8 +1,7 @@
-﻿using OpenWork.Domain.Entities;
+﻿using OpenWorkAdmin.Domain.Common;
+using OpenWorkAdmin.Domain.Entities;
 
-using OpenWorkAdmin.Domain.Common;
-
-namespace OpenWork.Services.ViewModels.Admins;
+namespace OpenWorkAdmin.Domain.ViewModels.Admins;
 
 public class CategoryViewModel : BaseEntity
 {

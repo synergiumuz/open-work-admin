@@ -1,8 +1,4 @@
-﻿using System;
-
-using OpenWork.Domain.Common;
-
-namespace OpenWork.Domain.Entities;
+﻿namespace OpenWorkAdmin.Domain.Entities;
 
 public class Comment : Auditable
 {
@@ -14,7 +10,7 @@ public class Comment : Auditable
 
 	public virtual Worker Worker { get; set; } = default!;
 
-	public string Content { get; set; } = String.Empty;
+	public string Content { get; set; } = string.Empty;
 
 	public bool Satisfied { get; set; }
 }

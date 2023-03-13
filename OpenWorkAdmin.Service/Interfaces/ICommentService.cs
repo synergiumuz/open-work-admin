@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 
-using OpenWork.Services.ViewModels.Comments;
+using OpenWorkAdmin.Domain.ViewModels.Comments;
 
 namespace OpenWorkAdmin.Service.Interfaces;
 

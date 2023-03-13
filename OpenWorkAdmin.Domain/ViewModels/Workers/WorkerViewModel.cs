@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 
-using OpenWork.Domain.Entities;
+using OpenWorkAdmin.Domain.Entities;
 
-namespace OpenWork.Services.ViewModels.Workers;
+namespace OpenWorkAdmin.Domain.ViewModels.Workers;
 
 public class WorkerViewModel : WorkerBaseViewModel
 {

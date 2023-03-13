@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 
-using OpenWork.Services.ViewModels.Users;
+using OpenWorkAdmin.Domain.ViewModels.Users;
 
 namespace OpenWorkAdmin.Service.Interfaces;
 

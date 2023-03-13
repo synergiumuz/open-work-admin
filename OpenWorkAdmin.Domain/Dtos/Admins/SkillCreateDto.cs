@@ -1,6 +1,6 @@
 ﻿using OpenWorkAdmin.Domain.Common;
 
-namespace OpenWork.Services.Dtos.Admins;
+namespace OpenWorkAdmin.Domain.Dtos.Admins;
 public class SkillCreateDto : Dto
 {
 	public string Name { get; set; } = string.Empty;

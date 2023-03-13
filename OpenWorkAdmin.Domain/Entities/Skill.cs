@@ -1,8 +1,6 @@
 ﻿using System.Collections.Generic;
 
-using OpenWork.Domain.Common;
-
-namespace OpenWork.Domain.Entities;
+namespace OpenWorkAdmin.Domain.Entities;
 
 public class Skill : BaseEntity
 {
