@@ -29,7 +29,7 @@ namespace OpenWorkAdmin.Service.Services
 
 		public async Task<bool> DeleteAsync(long id)
 		{
-			string query = "/categories" + id.ToString();
+			string query = "/categories/" + id.ToString();
 			var response = await _api.DeleteAsync(query);
 			if ((int)response.StatusCode is > 199 and < 300)
 				return true;
@@ -50,7 +50,7 @@ namespace OpenWorkAdmin.Service.Services
 
 		public async Task<CategoryViewModel> GetAsync(long id)
 		{
-			string query = $"/categories/category";
+			string query = $"/categories/{id}";
 			var response = await _api.GetAsync(query);
 			if ((int)response.StatusCode is > 199 and < 300)
 				return Newtonsoft.Json.JsonConvert.DeserializeObject<CategoryViewModel>(response.Content);
