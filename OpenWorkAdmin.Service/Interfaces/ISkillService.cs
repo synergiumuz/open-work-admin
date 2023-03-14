@@ -1,6 +1,5 @@
 ﻿using System.Threading.Tasks;
-
-using OpenWorkAdmin.Domain.Dtos.Admins;
+using OpenWork.Services.Dtos.Admins;
 
 namespace OpenWorkAdmin.Service.Interfaces;
 
