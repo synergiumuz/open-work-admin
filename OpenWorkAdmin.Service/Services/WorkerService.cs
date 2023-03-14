@@ -20,7 +20,7 @@ namespace OpenWorkAdmin.Service.Services
 		}
 		public async Task<IEnumerable<WorkerBaseViewModel>> GetAllAsync(int page)
 		{
-			string query = "/workers";
+			string query = $"/workers?page={page}";
 			var response = await _api.GetAsync(query);
 			if ((int)response.StatusCode is > 199 and < 300)
 				return Newtonsoft.Json.JsonConvert.DeserializeObject<IEnumerable<WorkerViewModel>>(response.Content);
